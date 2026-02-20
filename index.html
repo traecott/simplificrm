@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0066)file:///Users/traecott/Downloads/simplifi-command-center-v8_3.html -->
+<!-- saved from url=(0066)file:///Users/traecott/Downloads/simplifi-command-center-v8_4.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Simpli.fi — Command Center</title>
-<link href="./Simpli.fi — Command Center-V9_files/css2" rel="stylesheet">
+<link href="./Simpli.fi — Command Center-V11_files/css2" rel="stylesheet">
 <style>
 :root {
   --bg:#000;--surface:#0d0d0d;--s2:#111;--s3:#161616;--s4:#1a1a1a;
@@ -269,8 +269,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:1
     <div class="ni" onclick="nav(&#39;digest&#39;)"><span class="ni-icon">☀</span>Morning Digest</div>
     <div class="ni" onclick="nav(&#39;todos&#39;)"><span class="ni-icon">☐</span>To-Dos<span class="nb" id="nb-td" style="">4</span></div>
     <div class="ng">Pipeline</div>
-    <div class="ni active" onclick="nav(&#39;pipeline&#39;)"><span class="ni-icon">◈</span>Pipeline</div>
-    <div class="ni" onclick="nav(&#39;contacts&#39;)"><span class="ni-icon">◎</span>Contacts</div>
+    <div class="ni" onclick="nav(&#39;pipeline&#39;)"><span class="ni-icon">◈</span>Pipeline</div>
+    <div class="ni active" onclick="nav(&#39;contacts&#39;)"><span class="ni-icon">◎</span>Contacts</div>
     <div class="ni" onclick="nav(&#39;agencies&#39;)"><span class="ni-icon">◇</span>Agencies</div>
     <div class="ng">Finance</div>
     <div class="ni" onclick="nav(&#39;accounts&#39;)"><span class="ni-icon">◉</span>Account Hub<span class="nb" id="nb-acct" style="display:none">0</span></div>
@@ -286,7 +286,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:1
     <div class="ni" onclick="nav(&#39;settings&#39;)"><span class="ni-icon">⚙</span>Settings</div>
   </div>
   <div class="sfoot">
-    <div class="clock" id="clock">10:12 PM</div>
+    <div class="clock" id="clock">10:16 PM</div>
     <div class="clock-sub" id="clock-sub">Thu, Feb 19</div>
   </div>
 </nav>
@@ -344,7 +344,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:1
 </div>
 
 <!-- PIPELINE -->
-<div class="page active" id="page-pipeline">
+<div class="page" id="page-pipeline">
   <div class="topbar"><div class="tb-l"><div class="tb-title">Pipeline</div></div><div class="tb-r"><button class="btn btn-w" onclick="openAddContact()">+ Add Contact</button></div></div>
   <div class="content">
     <div class="filters" id="pf">
@@ -363,7 +363,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:1
 </div>
 
 <!-- CONTACTS -->
-<div class="page" id="page-contacts">
+<div class="page active" id="page-contacts">
   <div class="topbar"><div class="tb-l"><div class="tb-title">All Contacts</div><div class="tb-sub" id="contacts-count">4 contacts</div></div><div class="tb-r">
     <button class="btn" onclick="openImportCSV()">↑ Import CSV</button>
     <button class="btn btn-w" onclick="openAddContact()">+ Add</button>
