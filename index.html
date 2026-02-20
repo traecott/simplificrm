@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0066)file:///Users/traecott/Downloads/simplifi-command-center-v7_1.html -->
+<!-- saved from url=(0064)file:///Users/traecott/Downloads/simplifi-command-center-v8.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Simpli.fi — Command Center</title>
-<link href="./Simpli.fi — Command Center_files/css2" rel="stylesheet">
+<link href="./Simpli.fi — Command Center-V8_files/css2" rel="stylesheet">
 <style>
 :root {
   --bg:#000;--surface:#0d0d0d;--s2:#111;--s3:#161616;--s4:#1a1a1a;
@@ -266,13 +266,14 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:1
   </div>
   <div class="nav">
     <div class="ng">Overview</div>
-    <div class="ni" onclick="nav(&#39;digest&#39;)"><span class="ni-icon">☀</span>Morning Digest</div>
+    <div class="ni active" onclick="nav(&#39;digest&#39;)"><span class="ni-icon">☀</span>Morning Digest</div>
     <div class="ni" onclick="nav(&#39;todos&#39;)"><span class="ni-icon">☐</span>To-Dos<span class="nb" id="nb-td" style="">4</span></div>
     <div class="ng">Pipeline</div>
     <div class="ni" onclick="nav(&#39;pipeline&#39;)"><span class="ni-icon">◈</span>Pipeline</div>
     <div class="ni" onclick="nav(&#39;contacts&#39;)"><span class="ni-icon">◎</span>Contacts</div>
     <div class="ni" onclick="nav(&#39;agencies&#39;)"><span class="ni-icon">◇</span>Agencies</div>
     <div class="ng">Finance</div>
+    <div class="ni" onclick="nav(&#39;accounts&#39;)"><span class="ni-icon">◉</span>Account Hub<span class="nb" id="nb-acct" style="display:none">0</span></div>
     <div class="ni" onclick="nav(&#39;budget&#39;)"><span class="ni-icon">$</span>Budget &amp; Forecast</div>
     <div class="ng">Growth</div>
     <div class="ni" onclick="nav(&#39;prospects&#39;)"><span class="ni-icon">+</span>Prospecting</div>
@@ -282,10 +283,10 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:1
     <div class="ni" onclick="nav(&#39;kb&#39;)"><span class="ni-icon">✦</span>AI Assistant</div>
     <div class="ng">Settings</div>
     <div class="ni" onclick="nav(&#39;integrations&#39;)"><span class="ni-icon">✉</span>Smart Inbox<span class="nb" id="nb-inbox" style="display:none">0</span></div>
-    <div class="ni active" onclick="nav(&#39;settings&#39;)"><span class="ni-icon">⚙</span>Settings</div>
+    <div class="ni" onclick="nav(&#39;settings&#39;)"><span class="ni-icon">⚙</span>Settings</div>
   </div>
   <div class="sfoot">
-    <div class="clock" id="clock">08:28 PM</div>
+    <div class="clock" id="clock">09:15 PM</div>
     <div class="clock-sub" id="clock-sub">Thu, Feb 19</div>
   </div>
 </nav>
@@ -294,7 +295,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:1
 <main class="main">
 
 <!-- DIGEST -->
-<div class="page" id="page-digest">
+<div class="page active" id="page-digest">
   <div class="topbar">
     <div class="tb-l"><div class="tb-title">Morning Digest</div><div class="tb-sub" id="d-date">Thursday, February 19, 2026</div></div>
     <div class="tb-r">
@@ -378,6 +379,109 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:1
     <div id="ag-tree"><div class="ab"><div class="ar" onclick="toggleAg(&#39;mltqxuqeyh09y20qgx&#39;)"><div style="flex:1"><div style="color:var(--white);font-weight:500">Lions Creative</div><div style="font-family:var(--mono);font-size:.63rem;color:var(--t2);margin-top:1px">Dillon Murphy · Last: Feb 19</div></div><div style="display:flex;align-items:center;gap:6px"><span class="badge s-agency"><span class="bdot" style="background:currentColor;opacity:.6"></span>Agency Partner</span><span style="font-family:var(--mono);font-size:.6rem;color:var(--t3)">1 clients</span><button class="btn btn-sm" onclick="event.stopPropagation();openAddChild(&#39;mltqxuqeyh09y20qgx&#39;)">+ Client</button><button class="btn btn-sm" onclick="event.stopPropagation();openEditAg(&#39;mltqxuqeyh09y20qgx&#39;)">Edit</button><span class="chev" id="chev-mltqxuqeyh09y20qgx">▶</span></div></div><div class="ach" id="ach-mltqxuqeyh09y20qgx" style="display:none"><div class="acr"><div class="acc"></div><div style="flex:1"><div style="color:var(--white)">GM Management</div><div style="font-family:var(--mono);font-size:.63rem;color:var(--t2)">Maurice · Restaurant · —</div></div><div style="display:flex;gap:4px;align-items:center"><span class="badge s-active"><span class="bdot" style="background:currentColor;opacity:.6"></span>Active</span><button class="btn btn-sm" onclick="openEditCh(&#39;mltqxuqeyh09y20qgx&#39;,&#39;mltr0u9ncet71tvhfk&#39;)">Edit</button><button class="btn btn-sm btn-danger" onclick="delCh(&#39;mltqxuqeyh09y20qgx&#39;,&#39;mltr0u9ncet71tvhfk&#39;)">✕</button></div></div></div></div><div class="ab"><div class="ar" onclick="toggleAg(&#39;a1&#39;)"><div style="flex:1"><div style="color:var(--white);font-weight:500">Dickson Media Events</div><div style="font-family:var(--mono);font-size:.63rem;color:var(--t2);margin-top:1px">Lisa Monroe · (865) 555-0404 · Last: Feb 14 · $15,000/mo</div></div><div style="display:flex;align-items:center;gap:6px"><span class="badge s-agency"><span class="bdot" style="background:currentColor;opacity:.6"></span>Agency Partner</span><span style="font-family:var(--mono);font-size:.6rem;color:var(--t3)">2 clients</span><button class="btn btn-sm" onclick="event.stopPropagation();openAddChild(&#39;a1&#39;)">+ Client</button><button class="btn btn-sm" onclick="event.stopPropagation();openEditAg(&#39;a1&#39;)">Edit</button><span class="chev" id="chev-a1">▶</span></div></div><div class="ach" id="ach-a1" style="display:none"><div class="acr"><div class="acc"></div><div style="flex:1"><div style="color:var(--white)">Guardian Foundation Repair</div><div style="font-family:var(--mono);font-size:.63rem;color:var(--t2)">Bob Harris · Home Services · $9,000/mo</div></div><div style="display:flex;gap:4px;align-items:center"><span class="badge s-active"><span class="bdot" style="background:currentColor;opacity:.6"></span>Active</span><button class="btn btn-sm" onclick="openEditCh(&#39;a1&#39;,&#39;ch1&#39;)">Edit</button><button class="btn btn-sm btn-danger" onclick="delCh(&#39;a1&#39;,&#39;ch1&#39;)">✕</button></div></div><div class="acr"><div class="acc"></div><div style="flex:1"><div style="color:var(--white)">Knox Smile Dental</div><div style="font-family:var(--mono);font-size:.63rem;color:var(--t2)">Dr. Amy Foster · Healthcare · $1,800/mo</div></div><div style="display:flex;gap:4px;align-items:center"><span class="badge s-active"><span class="bdot" style="background:currentColor;opacity:.6"></span>Active</span><button class="btn btn-sm" onclick="openEditCh(&#39;a1&#39;,&#39;ch2&#39;)">Edit</button><button class="btn btn-sm btn-danger" onclick="delCh(&#39;a1&#39;,&#39;ch2&#39;)">✕</button></div></div></div></div><div class="ab"><div class="ar" onclick="toggleAg(&#39;a2&#39;)"><div style="flex:1"><div style="color:var(--white);font-weight:500">Stone &amp; Co Marketing</div><div style="font-family:var(--mono);font-size:.63rem;color:var(--t2);margin-top:1px">Brad Stone · (865) 555-0707 · Last: Feb 9 · $8,000/mo</div></div><div style="display:flex;align-items:center;gap:6px"><span class="badge s-agency"><span class="bdot" style="background:currentColor;opacity:.6"></span>Agency Partner</span><span style="font-family:var(--mono);font-size:.6rem;color:var(--t3)">1 clients</span><button class="btn btn-sm" onclick="event.stopPropagation();openAddChild(&#39;a2&#39;)">+ Client</button><button class="btn btn-sm" onclick="event.stopPropagation();openEditAg(&#39;a2&#39;)">Edit</button><span class="chev" id="chev-a2">▶</span></div></div><div class="ach" id="ach-a2" style="display:none"><div class="acr"><div class="acc"></div><div style="flex:1"><div style="color:var(--white)">East TN Auto Spa</div><div style="font-family:var(--mono);font-size:.63rem;color:var(--t2)">Dave Mullins · Automotive · $1,200/mo</div></div><div style="display:flex;gap:4px;align-items:center"><span class="badge s-active"><span class="bdot" style="background:currentColor;opacity:.6"></span>Active</span><button class="btn btn-sm" onclick="openEditCh(&#39;a2&#39;,&#39;ch3&#39;)">Edit</button><button class="btn btn-sm btn-danger" onclick="delCh(&#39;a2&#39;,&#39;ch3&#39;)">✕</button></div></div></div></div><div class="ab"><div class="ar" onclick="toggleAg(&#39;a3&#39;)"><div style="flex:1"><div style="color:var(--white);font-weight:500">Ridge Digital Media</div><div style="font-family:var(--mono);font-size:.63rem;color:var(--t2);margin-top:1px">Karen Webb · (865) 555-0808 · Last: Feb 10</div></div><div style="display:flex;align-items:center;gap:6px"><span class="badge s-warm"><span class="bdot" style="background:currentColor;opacity:.6"></span>Warm</span><span style="font-family:var(--mono);font-size:.6rem;color:var(--t3)">0 clients</span><button class="btn btn-sm" onclick="event.stopPropagation();openAddChild(&#39;a3&#39;)">+ Client</button><button class="btn btn-sm" onclick="event.stopPropagation();openEditAg(&#39;a3&#39;)">Edit</button><span class="chev" id="chev-a3">▶</span></div></div><div class="ach" id="ach-a3" style="display:none"><div style="padding:10px 14px 10px 24px;font-family:var(--mono);font-size:.63rem;color:var(--t3)">No clients yet.</div></div></div></div>
   </div>
 </div>
+
+<!-- ACCOUNT HUB -->
+<div class="page" id="page-accounts">
+  <div class="topbar">
+    <div class="tb-l"><div class="tb-title">Account Hub</div><div class="tb-sub">IOs, pacing, billing, commission — one place per client</div></div>
+    <div class="tb-r">
+      <button class="btn" onclick="openNewAccount()">+ New Account</button>
+      <button class="btn btn-w" onclick="pasteInboxEmails()">✦ Paste Emails → Analyze</button>
+    </div>
+  </div>
+  <div class="content">
+
+    <!-- ACCOUNT LIST (left) + DETAIL (right) -->
+    <div style="display:grid;grid-template-columns:280px 1fr;gap:14px;align-items:start;">
+
+      <!-- ACCOUNT LIST -->
+      <div>
+        <div class="card" style="padding:0;">
+          <div style="padding:10px 12px;border-bottom:1px solid var(--border);display:flex;gap:6px;">
+            <input class="fi" id="acct-search" placeholder="Search accounts..." style="flex:1;font-size:.75rem;" oninput="renderAccountList()">
+          </div>
+          <div id="acct-list" style="max-height:calc(100vh - 180px);overflow-y:auto;"></div>
+        </div>
+      </div>
+
+      <!-- ACCOUNT DETAIL -->
+      <div id="acct-detail">
+        <div class="card" style="text-align:center;padding:40px;color:var(--t3);">
+          <div style="font-size:2rem;margin-bottom:12px;">◉</div>
+          <div style="font-family:var(--mono);font-size:.75rem;">Select an account to view details</div>
+          <div style="font-size:.72rem;margin-top:8px;">or click <strong style="color:var(--white)">+ New Account</strong> to get started</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ACCOUNT HUB MODALS -->
+<!-- New/Edit Account Modal -->
+<div class="overlay" id="m-account"><div class="modal" style="max-width:560px"><div class="mh"><div class="mt" id="m-account-title">New Account</div><button class="mc" onclick="closeM(&#39;m-account&#39;)">✕</button></div><div class="mb"><div class="fgrid">
+  <div class="fg"><label class="fl">Client / Advertiser Name *</label><input class="fi" id="ac-name"></div>
+  <div class="fg"><label class="fl">Billing Org ID</label><input class="fi" id="ac-orgid" placeholder="e.g. 558440"></div>
+  <div class="fg"><label class="fl">Primary Contact</label><input class="fi" id="ac-contact" placeholder="Name"></div>
+  <div class="fg"><label class="fl">Contact Email</label><input class="fi" id="ac-email" type="email"></div>
+  <div class="fg"><label class="fl">Contact Phone</label><input class="fi" id="ac-phone"></div>
+  <div class="fg"><label class="fl">Vertical</label><select class="fs" id="ac-vertical"><option>Automotive</option><option>Legal</option><option>QSR / Restaurant</option><option>Multi-Location Franchise</option><option>Medical / Healthcare</option><option>Insurance</option><option>Tourism / Events</option><option>Home Services</option><option>Retail</option><option>Real Estate</option><option>Finance / Banking</option><option>Other</option></select></div>
+  <div class="fg"><label class="fl">Relationship Start Date</label><input class="fi" id="ac-start" type="date"></div>
+  <div class="fg"><label class="fl">Status</label><select class="fs" id="ac-status"><option value="active">Active</option><option value="pending">Pending</option><option value="paused">Paused</option><option value="churned">Churned</option></select></div>
+  <div class="fg full"><label class="fl">Notes</label><textarea class="fta" id="ac-notes" style="min-height:60px;"></textarea></div>
+</div><input type="hidden" id="ac-id"></div><div class="mf"><button class="btn" onclick="closeM(&#39;m-account&#39;)">Cancel</button><button class="btn btn-w" onclick="saveAccount()">Save Account</button></div></div></div>
+
+<!-- New IO Modal -->
+<div class="overlay" id="m-io"><div class="modal" style="max-width:620px;"><div class="mh"><div class="mt" id="m-io-title">Add Insertion Order</div><button class="mc" onclick="closeM(&#39;m-io&#39;)">✕</button></div><div class="mb">
+  <div class="fgrid">
+    <div class="fg"><label class="fl">IO Type</label><select class="fs" id="io-type" onchange="renderIOTypeHint()"><option value="open">Open IO (Credit Limit)</option><option value="campaign">Campaign IO (Exact Budget)</option></select></div>
+    <div class="fg"><label class="fl">Order Name</label><input class="fi" id="io-name" placeholder="e.g. F Street Annual Open IO"></div>
+    <div class="fg"><label class="fl">Total IO Value / Credit Limit</label><input class="fi" id="io-total" placeholder="75000" type="number"></div>
+    <div class="fg"><label class="fl">IO Date (signed)</label><input class="fi" id="io-date" type="date"></div>
+    <div class="fg"><label class="fl">Campaign Start</label><input class="fi" id="io-start" type="date"></div>
+    <div class="fg"><label class="fl">Campaign End</label><input class="fi" id="io-end" type="date"></div>
+    <div class="fg"><label class="fl">DocuSign / Reference ID</label><input class="fi" id="io-docid" placeholder="Optional"></div>
+    <div class="fg"><label class="fl">Status</label><select class="fs" id="io-status"><option value="active">Active</option><option value="pending">Pending Signature</option><option value="completed">Completed</option><option value="cancelled">Cancelled</option></select></div>
+  </div>
+  <div id="io-type-hint" style="margin:8px 0;padding:8px 10px;background:var(--s2);border-radius:4px;font-size:.72rem;color:var(--t2);"></div>
+  <!-- Tactic Lines -->
+  <div style="margin-top:12px;">
+    <div style="font-family:var(--mono);font-size:.6rem;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">Tactic Line Items</div>
+    <div id="io-lines"></div>
+    <button class="btn btn-sm" onclick="addIOLine()" style="margin-top:6px;">+ Add Tactic Line</button>
+  </div>
+  <input type="hidden" id="io-acct-id">
+  <input type="hidden" id="io-id">
+</div><div class="mf"><button class="btn" onclick="closeM(&#39;m-io&#39;)">Cancel</button><button class="btn btn-w" onclick="saveIO()">Save IO</button></div></div></div>
+
+<!-- Paste Emails Modal -->
+<div class="overlay" id="m-paste-inbox"><div class="modal" style="max-width:640px;"><div class="mh"><div class="mt">✦ Paste Emails → AI Analysis</div><button class="mc" onclick="closeM(&#39;m-paste-inbox&#39;)">✕</button></div><div class="mb">
+  <p style="font-size:.78rem;color:var(--t2);margin-bottom:10px;line-height:1.6;">Copy emails from Gmail (select all text, Ctrl+C) and paste them below. You can paste multiple emails at once — separate them with a blank line or "---". The AI will read through everything, identify clients, flag urgent items, create to-dos, and update account history.</p>
+  <textarea class="fta" id="paste-inbox-text" style="min-height:200px;" placeholder="Paste email text here... You can paste multiple emails at once."></textarea>
+  <div id="paste-inbox-result" style="display:none;margin-top:10px;"></div>
+</div><div class="mf"><button class="btn" onclick="closeM(&#39;m-paste-inbox&#39;)">Cancel</button><button class="btn btn-w" onclick="runPasteInboxAI()">✦ Analyze Emails</button></div></div></div>
+
+<!-- Monthly Actuals Modal -->
+<div class="overlay" id="m-actuals"><div class="modal" style="max-width:580px;"><div class="mh"><div class="mt" id="m-actuals-title">Log Monthly Actuals</div><button class="mc" onclick="closeM(&#39;m-actuals&#39;)">✕</button></div><div class="mb">
+  <div class="fgrid" style="margin-bottom:10px;">
+    <div class="fg"><label class="fl">Month</label><select class="fs" id="act-month"><option value="0">January</option><option value="1">February</option><option value="2">March</option><option value="3">April</option><option value="4">May</option><option value="5">June</option><option value="6">July</option><option value="7">August</option><option value="8">September</option><option value="9">October</option><option value="10">November</option><option value="11">December</option></select></div>
+    <div class="fg"><label class="fl">Year</label><input class="fi" id="act-year" value="2026" type="number"></div>
+  </div>
+  <div style="font-family:var(--mono);font-size:.6rem;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">Programmatic (from Looker)</div>
+  <div class="fgrid" style="margin-bottom:12px;">
+    <div class="fg"><label class="fl">Total Gross Spend</label><input class="fi" id="act-prog-gross" placeholder="0" type="number"></div>
+    <div class="fg"><label class="fl">Revenue Raw (Net)</label><input class="fi" id="act-prog-net" placeholder="0" type="number"></div>
+    <div class="fg full"><label class="fl">Paste Looker row (optional — auto-fills above)</label><input class="fi" id="act-looker-paste" placeholder="e.g. Friendship Automotive Group  $26,431.85  $14,077.88  53%" oninput="parseLookerPaste()"></div>
+  </div>
+  <div style="font-family:var(--mono);font-size:.6rem;color:var(--blue);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">Omni / Social (manual — not in Looker)</div>
+  <div id="act-omni-lines"></div>
+  <button class="btn btn-sm" onclick="addActualOmniLine()" style="margin-top:6px;border-color:var(--blue);color:var(--blue);">+ Add Omni Tactic</button>
+  <div style="margin-top:14px;padding:10px;background:var(--s2);border-radius:4px;">
+    <div style="font-family:var(--mono);font-size:.6rem;color:var(--yellow);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;">Commission Preview</div>
+    <div id="act-comm-preview" style="font-size:.8rem;color:var(--white);"></div>
+  </div>
+  <input type="hidden" id="act-acct-id">
+</div><div class="mf"><button class="btn" onclick="closeM(&#39;m-actuals&#39;)">Cancel</button><button class="btn btn-w" onclick="saveActuals()">Save Actuals</button></div></div></div>
 
 <!-- BUDGET & FORECAST -->
 <div class="page" id="page-budget">
@@ -631,7 +735,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:1
 </div>
 
 <!-- SETTINGS -->
-<div class="page active" id="page-settings">
+<div class="page" id="page-settings">
   <div class="topbar"><div class="tb-l"><div class="tb-title">Settings</div><div class="tb-sub">cold lead threshold, commission, products</div></div></div>
   <div class="content">
     <div class="card" style="margin-bottom:14px;">
@@ -650,12 +754,12 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:1
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
           <div>
             <div style="font-family:var(--mono);font-size:.6rem;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">Programmatic Products</div>
-            <div id="prog-prod-list"><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b);font-family:var(--mono);font-size:.72rem"><span style="color:var(--green)">CTV</span><button class="btn btn-sm btn-danger" onclick="removeProduct(&#39;prog&#39;,&#39;CTV&#39;)">✕</button></div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b);font-family:var(--mono);font-size:.72rem"><span style="color:var(--green)">Display</span><button class="btn btn-sm btn-danger" onclick="removeProduct(&#39;prog&#39;,&#39;Display&#39;)">✕</button></div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b);font-family:var(--mono);font-size:.72rem"><span style="color:var(--green)">OLV</span><button class="btn btn-sm btn-danger" onclick="removeProduct(&#39;prog&#39;,&#39;OLV&#39;)">✕</button></div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b);font-family:var(--mono);font-size:.72rem"><span style="color:var(--green)">Native</span><button class="btn btn-sm btn-danger" onclick="removeProduct(&#39;prog&#39;,&#39;Native&#39;)">✕</button></div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b);font-family:var(--mono);font-size:.72rem"><span style="color:var(--green)">Audio</span><button class="btn btn-sm btn-danger" onclick="removeProduct(&#39;prog&#39;,&#39;Audio&#39;)">✕</button></div></div>
+            <div id="prog-prod-list"></div>
             <div style="display:flex;gap:7px;margin-top:8px;"><input class="fi" id="new-prog" placeholder="New product..." style="flex:1"><button class="btn btn-sm btn-green" onclick="addProduct(&#39;prog&#39;)">+ Add</button></div>
           </div>
           <div>
             <div style="font-family:var(--mono);font-size:.6rem;color:var(--blue);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">Omni / Social Products</div>
-            <div id="omni-prod-list"><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b);font-family:var(--mono);font-size:.72rem"><span style="color:var(--blue)">SEM</span><button class="btn btn-sm btn-danger" onclick="removeProduct(&#39;omni&#39;,&#39;SEM&#39;)">✕</button></div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b);font-family:var(--mono);font-size:.72rem"><span style="color:var(--blue)">LSA</span><button class="btn btn-sm btn-danger" onclick="removeProduct(&#39;omni&#39;,&#39;LSA&#39;)">✕</button></div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b);font-family:var(--mono);font-size:.72rem"><span style="color:var(--blue)">YouTube</span><button class="btn btn-sm btn-danger" onclick="removeProduct(&#39;omni&#39;,&#39;YouTube&#39;)">✕</button></div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b);font-family:var(--mono);font-size:.72rem"><span style="color:var(--blue)">YouTube TV</span><button class="btn btn-sm btn-danger" onclick="removeProduct(&#39;omni&#39;,&#39;YouTube TV&#39;)">✕</button></div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b);font-family:var(--mono);font-size:.72rem"><span style="color:var(--blue)">Netflix</span><button class="btn btn-sm btn-danger" onclick="removeProduct(&#39;omni&#39;,&#39;Netflix&#39;)">✕</button></div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b);font-family:var(--mono);font-size:.72rem"><span style="color:var(--blue)">DOOH</span><button class="btn btn-sm btn-danger" onclick="removeProduct(&#39;omni&#39;,&#39;DOOH&#39;)">✕</button></div></div>
+            <div id="omni-prod-list"></div>
             <div style="display:flex;gap:7px;margin-top:8px;"><input class="fi" id="new-omni" placeholder="New product..." style="flex:1"><button class="btn btn-sm" style="border-color:var(--blue);color:var(--blue);" onclick="addProduct(&#39;omni&#39;)">+ Add</button></div>
           </div>
         </div>
@@ -1012,7 +1116,7 @@ function nav(page){
     var oc=n.getAttribute('onclick')||'';
     if(oc.indexOf("'"+page+"'")!==-1) n.classList.add('active');
   });
-  var renders={pipeline:renderPipe,contacts:renderContacts,agencies:renderAgencies,todos:renderTodos,reports:renderReports,digest:renderDigest,budget:renderBudget,settings:renderSettings,prospects:function(){},integrations:initIntegrations,proposal:initProposal,kb:initKB};
+  var renders={pipeline:renderPipe,contacts:renderContacts,agencies:renderAgencies,todos:renderTodos,reports:renderReports,digest:renderDigest,budget:renderBudget,settings:renderSettings,prospects:function(){},integrations:initIntegrations,proposal:initProposal,kb:initKB,accounts:initAccounts};
   if(renders[page]) renders[page]();
 }
 
@@ -1970,6 +2074,601 @@ function askKB(){
 
 function escH(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
+
+
+// ─── ACCOUNT HUB ──────────────────────────────────────────────────────────────
+var accounts=[];
+var activeAccountId=null;
+var ioLines=[];
+var actOmniLines=[];
+
+function seedAccounts(){
+  return [
+    {id:uid(),name:'F Street Investments',orgId:'556090',contact:'Peter Studer',email:'peter@fstreet.com',phone:'2628930355',vertical:'Finance / Banking',status:'active',startDate:'2026-01-27',notes:'Open IO client. Flexible spend — started at $2,500/mo, growing.',ios:[{id:uid(),type:'open',name:'F Street Annual Open IO',total:75000,ioDate:'2026-01-27',start:'2026-02-01',end:'2026-12-31',docId:'80EC3DCA-3BD3-4487-A33E-D15304DDD4F0',status:'active',lines:[{desc:'DISPLAY',targeting:'ALL TACTICS',imps:9375000,cpm:4,cost:37500,tacticType:'prog'},{desc:'VIDEO',targeting:'ALL TACTICS',imps:3125000,cpm:12,cost:37500,tacticType:'prog'}]}],actuals:[{month:1,year:2026,progGross:1179.02,progNet:1016.55,omni:[]}],history:[{date:dAgo(23),type:'io',note:'Signed Open IO — $75K credit limit, Display + Video'},{date:dAgo(23),type:'call',note:'Onboarding call with Peter. Starting small at $2,500/mo to test.'}]},
+    {id:uid(),name:'Friendship Automotive Group',orgId:'445236',contact:'',email:'',phone:'',vertical:'Automotive',status:'active',startDate:'2025-01-01',notes:'Largest account. Y-O-Y down 40% — need to protect and grow.',ios:[],actuals:[{month:1,year:2026,progGross:26431.85,progNet:14077.88,omni:[]},{month:2,year:2026,progGross:12104.14,progNet:6063.56,omni:[]}],history:[{date:dAgo(3),type:'note',note:'Feb pacing slower than Jan. Check with CS on delivery.'}]},
+    {id:uid(),name:'Knoxville Wholesale Furniture',orgId:'558440',contact:'',email:'',phone:'',vertical:'Retail',status:'active',startDate:'2025-06-01',notes:'Strong account, 30% M-O-M growth.',ios:[],actuals:[{month:1,year:2026,progGross:22994.70,progNet:14292.08,omni:[]},{month:2,year:2026,progGross:14690.57,progNet:8721.18,omni:[]}],history:[]},
+    {id:uid(),name:'The Jenkins Agency',orgId:'553083',contact:'',email:'',phone:'',vertical:'Other',status:'active',startDate:'2025-01-01',notes:'Agency partner — manages multiple sub-clients.',ios:[],actuals:[{month:1,year:2026,progGross:11560.61,progNet:6760.48,omni:[]},{month:2,year:2026,progGross:6350.06,progNet:3718.10,omni:[]}],history:[]},
+    {id:uid(),name:'Clearwater Plumbing LLC',orgId:'548862',contact:'',email:'',phone:'',vertical:'Home Services',status:'active',startDate:'2025-01-01',notes:'High margin account (73%). Down 72% M-O-M — follow up.',ios:[],actuals:[{month:1,year:2026,progGross:6300.68,progNet:4599.37,omni:[]},{month:2,year:2026,progGross:924.99,progNet:672.91,omni:[]}],history:[]},
+    {id:uid(),name:'Apex Bank',orgId:'535591',contact:'',email:'',phone:'',vertical:'Finance / Banking',status:'active',startDate:'2025-01-01',notes:'1,949% M-O-M growth — new campaign launched.',ios:[],actuals:[{month:1,year:2026,progGross:799.59,progNet:625.25,omni:[]},{month:2,year:2026,progGross:984.44,progNet:788.29,omni:[]}],history:[]}
+  ];
+}
+
+function initAccounts(){
+  accounts=lsGet('sc4_accounts')||seedAccounts();
+  renderAccountList();
+}
+
+function saveAccounts(){ lsSet('sc4_accounts',accounts); }
+
+function renderAccountList(){
+  var el=document.getElementById('acct-list'); if(!el)return;
+  var q=(document.getElementById('acct-search')||{}).value||'';
+  var filtered=accounts.filter(function(a){ return !q||a.name.toLowerCase().includes(q.toLowerCase())||a.orgId.includes(q); });
+  if(!filtered.length){ el.innerHTML='<div style="padding:16px;text-align:center;color:var(--t3);font-size:.75rem;">No accounts found</div>'; return; }
+  var html='';
+  filtered.forEach(function(a){
+    var isActive=a.id===activeAccountId;
+    var statusColor=a.status==='active'?'var(--green)':a.status==='pending'?'var(--yellow)':'var(--t3)';
+    var latestActual=getLatestActual(a);
+    var mtdComm=latestActual?calcCommission(latestActual):0;
+    html+='<div onclick="selectAccount(\''+a.id+'\')" style="padding:10px 12px;border-bottom:1px solid var(--border);cursor:pointer;background:'+(isActive?'var(--s2)':'transparent')+';transition:background .15s;">';
+    html+='<div style="display:flex;justify-content:space-between;align-items:flex-start;">';
+    html+='<div style="font-size:.78rem;color:var(--white);font-weight:'+(isActive?'600':'400')+';line-height:1.3;">'+escH(a.name)+'</div>';
+    html+='<div style="font-size:.6rem;color:'+statusColor+';margin-left:6px;white-space:nowrap;">'+a.status+'</div></div>';
+    html+='<div style="display:flex;justify-content:space-between;margin-top:3px;">';
+    html+='<div style="font-size:.65rem;color:var(--t3);">'+escH(a.vertical||'')+(a.orgId?' · ID:'+a.orgId:'')+'</div>';
+    html+='<div style="font-size:.65rem;color:var(--green);">'+(mtdComm?'$'+mtdComm.toFixed(0)+' comm':'')+'</div></div>';
+    html+='</div>';
+  });
+  el.innerHTML=html;
+}
+
+function selectAccount(id){
+  activeAccountId=id;
+  renderAccountList();
+  renderAccountDetail(id);
+}
+
+function getLatestActual(a){
+  if(!a.actuals||!a.actuals.length)return null;
+  return a.actuals.sort(function(x,y){return (y.year*12+y.month)-(x.year*12+x.month);})[0];
+}
+
+function calcCommission(actual){
+  if(!actual)return 0;
+  var progComm=(actual.progNet||0)*0.12;
+  var omniComm=(actual.omni||[]).reduce(function(s,o){return s+(o.gross||0)*0.35*0.12;},0);
+  return progComm+omniComm;
+}
+
+function renderAccountDetail(id){
+  var a=accounts.find(function(x){return x.id===id;}); if(!a)return;
+  var el=document.getElementById('acct-detail'); if(!el)return;
+
+  // Commission totals
+  var totalComm2026=(a.actuals||[]).filter(function(x){return x.year===2026;}).reduce(function(s,x){return s+calcCommission(x);},0);
+  var totalGross2026=(a.actuals||[]).filter(function(x){return x.year===2026;}).reduce(function(s,x){return s+(x.progGross||0)+(x.omni||[]).reduce(function(os,o){return os+(o.gross||0);},0);},0);
+
+  // IO summary
+  var activeIOs=(a.ios||[]).filter(function(i){return i.status==='active';});
+  var totalIOValue=activeIOs.reduce(function(s,i){return s+(i.total||0);},0);
+  var totalSpentUnderIO=(a.actuals||[]).reduce(function(s,x){return s+(x.progGross||0)+(x.omni||[]).reduce(function(os,o){return os+(o.gross||0);},0);},0);
+
+  var html='';
+
+  // HEADER CARD
+  html+='<div class="card" style="margin-bottom:12px;">';
+  html+='<div class="ch"><span class="ct" style="font-size:1rem;">'+escH(a.name)+'</span>';
+  html+='<span style="font-family:var(--mono);font-size:.6rem;color:var(--t3);margin-left:8px;">'+escH(a.vertical||'')+(a.orgId?' · Billing Org: '+a.orgId:'')+'</span>';
+  html+='<div style="margin-left:auto;display:flex;gap:6px;">';
+  html+='<button class="btn btn-sm" onclick="editAccount(\''+id+'\')">✎ Edit</button>';
+  html+='<button class="btn btn-sm" onclick="addHistoryNote(\''+id+'\')">+ Note</button>';
+  html+='<button class="btn btn-sm btn-danger" onclick="deleteAccount(\''+id+'\')">✕</button>';
+  html+='</div></div>';
+  html+='<div class="cb"><div class="sg s4" style="margin:0;">';
+  html+='<div class="stat"><div class="sl">2026 Gross Spend</div><div class="sv">'+fmtM(totalGross2026)+'</div><div class="ss">all tactics YTD</div></div>';
+  html+='<div class="stat"><div class="sl">2026 Commission</div><div class="sv" style="color:var(--green);">'+fmtM(totalComm2026)+'</div><div class="ss">your 12% YTD</div></div>';
+  html+='<div class="stat"><div class="sl">Active IOs</div><div class="sv" style="color:var(--yellow);">'+activeIOs.length+'</div><div class="ss">'+fmtM(totalIOValue)+' total value</div></div>';
+  html+='<div class="stat"><div class="sl">Client Since</div><div class="sv" style="font-size:.9rem;">'+(a.startDate?new Date(a.startDate).toLocaleDateString('en-US',{month:'short',year:'numeric'}):'—')+'</div><div class="ss">relationship start</div></div>';
+  html+='</div></div></div>';
+
+  // TABS
+  html+='<div style="display:flex;gap:0;margin-bottom:12px;border-bottom:1px solid var(--border);">';
+  ['ios','pacing','history','inbox'].forEach(function(tab,i){
+    var labels={ios:'📄 IOs',pacing:'📊 Pacing & Billing',history:'🕐 History',inbox:'✉ Emails'};
+    html+='<button onclick="showAcctTab(\''+id+'\',\''+tab+'\')" id="acct-tab-'+tab+'" style="padding:8px 16px;background:none;border:none;border-bottom:2px solid '+(i===0?'var(--white)':'transparent')+';color:'+(i===0?'var(--white)':'var(--t2)')+';font-size:.75rem;cursor:pointer;font-family:var(--mono);">'+labels[tab]+'</button>';
+  });
+  html+='</div>';
+  html+='<div id="acct-tab-content"></div>';
+
+  el.innerHTML=html;
+  renderAcctTab(id,'ios');
+}
+
+function showAcctTab(id,tab){
+  ['ios','pacing','history','inbox'].forEach(function(t){
+    var el=document.getElementById('acct-tab-'+t); if(!el)return;
+    el.style.borderBottomColor=t===tab?'var(--white)':'transparent';
+    el.style.color=t===tab?'var(--white)':'var(--t2)';
+  });
+  renderAcctTab(id,tab);
+}
+
+function renderAcctTab(id,tab){
+  var a=accounts.find(function(x){return x.id===id;}); if(!a)return;
+  var el=document.getElementById('acct-tab-content'); if(!el)return;
+  if(tab==='ios') el.innerHTML=renderIOsTab(a);
+  else if(tab==='pacing') el.innerHTML=renderPacingTab(a);
+  else if(tab==='history') el.innerHTML=renderHistoryTab(a);
+  else if(tab==='inbox') el.innerHTML=renderInboxTab(a);
+}
+
+function renderIOsTab(a){
+  var html='<div style="display:flex;justify-content:flex-end;margin-bottom:10px;"><button class="btn btn-sm btn-w" onclick="openNewIO(\''+a.id+'\')">+ Add IO</button></div>';
+  if(!a.ios||!a.ios.length) return html+'<div class="card" style="text-align:center;padding:24px;color:var(--t3);font-size:.78rem;">No IOs on file. Click + Add IO to log one.</div>';
+  a.ios.forEach(function(io){
+    var typeColor=io.type==='open'?'var(--yellow)':'var(--green)';
+    var typeLabel=io.type==='open'?'OPEN IO':'CAMPAIGN IO';
+    var totalSpent=(a.actuals||[]).reduce(function(s,x){return s+(x.progGross||0)+(x.omni||[]).reduce(function(os,o){return os+(o.gross||0);},0);},0);
+    var pctUsed=io.total>0?Math.min(100,(totalSpent/io.total*100)):0;
+    html+='<div class="card" style="margin-bottom:10px;">';
+    html+='<div class="ch"><span class="ct">'+escH(io.name||'IO')+'</span>';
+    html+='<span style="font-family:var(--mono);font-size:.6rem;color:'+typeColor+';margin-left:8px;border:1px solid '+typeColor+';padding:1px 6px;border-radius:3px;">'+typeLabel+'</span>';
+    html+='<span style="font-family:var(--mono);font-size:.6rem;color:var(--t3);margin-left:8px;">'+escH(io.status||'')+'</span>';
+    html+='<div style="margin-left:auto;display:flex;gap:6px;"><button class="btn btn-sm" onclick="editIO(\''+a.id+'\',\''+io.id+'\')">✎</button><button class="btn btn-sm btn-danger" onclick="deleteIO(\''+a.id+'\',\''+io.id+'\')">✕</button></div></div>';
+    html+='<div class="cb">';
+    // IO summary stats
+    html+='<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px;">';
+    html+='<div><div style="font-size:.6rem;color:var(--t3);font-family:var(--mono);">TOTAL VALUE</div><div style="font-size:.9rem;color:var(--white);font-weight:600;">'+fmtM(io.total||0)+'</div></div>';
+    html+='<div><div style="font-size:.6rem;color:var(--t3);font-family:var(--mono);">IO DATE</div><div style="font-size:.8rem;color:var(--white);">'+(io.ioDate?new Date(io.ioDate).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}):'—')+'</div></div>';
+    html+='<div><div style="font-size:.6rem;color:var(--t3);font-family:var(--mono);">FLIGHT</div><div style="font-size:.75rem;color:var(--white);">'+(io.start||'?')+' → '+(io.end||'?')+'</div></div>';
+    if(io.type==='open'){
+      html+='<div><div style="font-size:.6rem;color:var(--t3);font-family:var(--mono);">CREDIT USED</div><div style="font-size:.8rem;color:var(--yellow);">'+pctUsed.toFixed(1)+'%</div></div>';
+      html+='</div>';
+      // Progress bar
+      html+='<div style="background:var(--s2);border-radius:4px;height:6px;margin-bottom:12px;"><div style="background:var(--yellow);height:6px;border-radius:4px;width:'+pctUsed+'%;transition:width .3s;"></div></div>';
+      html+='<div style="font-size:.7rem;color:var(--t3);">'+fmtM(totalSpent)+' spent of '+fmtM(io.total)+' credit limit. Remaining: '+fmtM(Math.max(0,(io.total||0)-totalSpent))+'</div>';
+    } else {
+      html+='</div>';
+    }
+    // Tactic lines
+    if(io.lines&&io.lines.length){
+      html+='<div style="margin-top:12px;"><div style="font-family:var(--mono);font-size:.6rem;color:var(--t2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;">Tactic Lines</div>';
+      html+='<table class="tbl" style="font-size:.72rem;"><thead><tr><th class="left">Tactic</th><th class="left">Targeting</th><th>Type</th><th>Impressions</th><th>CPM</th><th>Media Cost</th></tr></thead><tbody>';
+      io.lines.forEach(function(ln){
+        var tc=ln.tacticType==='omni'?'var(--blue)':'var(--green)';
+        html+='<tr><td class="left">'+escH(ln.desc||'')+'</td><td class="left" style="color:var(--t2);">'+escH(ln.targeting||'')+'</td>';
+        html+='<td><span style="font-size:.6rem;color:'+tc+';border:1px solid '+tc+';padding:1px 5px;border-radius:3px;">'+(ln.tacticType==='omni'?'OMNI':'PROG')+'</span></td>';
+        html+='<td>'+(ln.imps?(Number(ln.imps)).toLocaleString():'—')+'</td><td>$'+(ln.cpm||0)+'</td><td style="color:var(--yellow);">'+fmtM(ln.cost||0)+'</td></tr>';
+      });
+      var lineTotal=io.lines.reduce(function(s,l){return s+(l.cost||0);},0);
+      html+='<tr class="total-row"><td colspan="5" class="left">TOTAL</td><td style="color:var(--yellow);font-weight:600;">'+fmtM(lineTotal)+'</td></tr>';
+      html+='</tbody></table></div>';
+    }
+    if(io.docId) html+='<div style="margin-top:8px;font-size:.65rem;color:var(--t3);">DocuSign ID: '+escH(io.docId)+'</div>';
+    html+='</div></div>';
+  });
+  return html;
+}
+
+function renderPacingTab(a){
+  var html='<div style="display:flex;justify-content:flex-end;margin-bottom:10px;gap:6px;">';
+  html+='<button class="btn btn-sm btn-w" onclick="openActuals(\''+a.id+'\')">+ Log Monthly Actuals</button>';
+  html+='</div>';
+  if(!a.actuals||!a.actuals.length) return html+'<div class="card" style="text-align:center;padding:24px;color:var(--t3);font-size:.78rem;">No actuals logged yet. Click + Log Monthly Actuals to enter numbers from Looker.</div>';
+
+  html+='<div class="card"><div class="cb" style="padding:0;overflow-x:auto;"><table class="tbl" style="font-size:.75rem;">';
+  html+='<thead><tr><th class="left">Month</th><th>Prog Gross</th><th>Prog Net (Looker)</th><th>Prog Margin %</th><th>Omni Gross</th><th>Omni Mgmt Fee</th><th style="color:var(--green);">Your Commission</th><th></th></tr></thead><tbody>';
+
+  var sortedActuals=(a.actuals||[]).slice().sort(function(x,y){return (y.year*12+y.month)-(x.year*12+x.month);});
+  var yearComm={}; var yearGross={};
+  sortedActuals.forEach(function(act){
+    var omniGross=(act.omni||[]).reduce(function(s,o){return s+(o.gross||0);},0);
+    var omniMgmt=omniGross*0.35;
+    var comm=calcCommission(act);
+    var pct=act.progGross>0?((act.progNet/act.progGross)*100):0;
+    var monthLabel=MONTHS[act.month]+' '+act.year;
+    yearComm[act.year]=(yearComm[act.year]||0)+comm;
+    yearGross[act.year]=(yearGross[act.year]||0)+(act.progGross||0)+omniGross;
+    html+='<tr>';
+    html+='<td class="left" style="font-weight:500;">'+monthLabel+'</td>';
+    html+='<td>'+fmtM(act.progGross||0)+'</td>';
+    html+='<td>'+fmtM(act.progNet||0)+'</td>';
+    html+='<td style="color:'+(pct>=55?'var(--green)':pct>=45?'var(--yellow)':'var(--red)')+';">'+(act.progGross>0?pct.toFixed(0)+'%':'—')+'</td>';
+    html+='<td>'+(omniGross?fmtM(omniGross):'—')+'</td>';
+    html+='<td>'+(omniMgmt?fmtM(omniMgmt):'—')+'</td>';
+    html+='<td style="color:var(--green);font-weight:600;">$'+comm.toFixed(2)+'</td>';
+    html+='<td><button class="btn btn-sm btn-danger" style="font-size:.55rem;" onclick="deleteActual(\''+a.id+'\','+act.month+','+act.year+')">✕</button></td>';
+    html+='</tr>';
+  });
+  html+='</tbody></table></div>';
+
+  // YTD summary
+  html+='<div class="ch" style="border-top:1px solid var(--border);"><span class="ct">YTD Summary</span></div>';
+  html+='<div class="cb"><div class="sg s3" style="margin:0;">';
+  Object.keys(yearGross).sort().reverse().forEach(function(yr){
+    html+='<div class="stat"><div class="sl">'+yr+' Gross</div><div class="sv">'+fmtM(yearGross[yr])+'</div></div>';
+    html+='<div class="stat"><div class="sl">'+yr+' Commission</div><div class="sv" style="color:var(--green);">'+fmtM(yearComm[yr])+'</div></div>';
+  });
+  html+='</div></div></div>';
+  return html;
+}
+
+function renderHistoryTab(a){
+  var html='<div style="display:flex;justify-content:flex-end;margin-bottom:10px;"><button class="btn btn-sm" onclick="addHistoryNote(\''+a.id+'\')">+ Add Note</button></div>';
+  var hist=(a.history||[]).slice().sort(function(x,y){return new Date(y.date)-new Date(x.date);});
+  if(!hist.length) return html+'<div class="card" style="text-align:center;padding:24px;color:var(--t3);font-size:.78rem;">No history yet. Notes, emails, and IO events will appear here.</div>';
+  html+='<div class="card"><div class="cb" style="padding:0;">';
+  hist.forEach(function(h,i){
+    var typeIcon={io:'📄',call:'📞',email:'✉',note:'📝',alert:'🔴',ai:'✦'}[h.type]||'📝';
+    var typeColor={io:'var(--yellow)',call:'var(--green)',email:'var(--blue)',note:'var(--t2)',alert:'var(--red)',ai:'var(--purple)'}[h.type]||'var(--t2)';
+    html+='<div style="padding:12px 14px;border-bottom:'+(i<hist.length-1?'1px solid var(--border)':'none')+';display:flex;gap:10px;">';
+    html+='<div style="font-size:1rem;margin-top:1px;">'+typeIcon+'</div>';
+    html+='<div style="flex:1;">';
+    html+='<div style="font-size:.72rem;color:var(--t3);margin-bottom:3px;">'+new Date(h.date).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'2-digit',minute:'2-digit'})+'</div>';
+    html+='<div style="font-size:.78rem;color:var(--white);line-height:1.5;">'+escH(h.note||'')+'</div>';
+    html+='</div></div>';
+  });
+  html+='</div></div>';
+  return html;
+}
+
+function renderInboxTab(a){
+  var html='<div class="card">';
+  html+='<div class="ch"><span class="ct">Email History — '+escH(a.name)+'</span><button class="btn btn-sm" onclick="pasteEmailForAccount(\''+a.id+'\')" style="margin-left:auto;">+ Paste Email</button></div>';
+  html+='<div class="cb">';
+  var emailHistory=(a.history||[]).filter(function(h){return h.type==='email'||h.type==='ai';});
+  if(!emailHistory.length){
+    html+='<div style="text-align:center;padding:20px;color:var(--t3);font-size:.78rem;">No emails logged yet.<br>Paste emails using the <strong style="color:var(--white)">✦ Paste Emails</strong> button at the top, or paste directly for this account.</div>';
+  } else {
+    emailHistory.slice().sort(function(x,y){return new Date(y.date)-new Date(x.date);}).forEach(function(h){
+      html+='<div style="padding:10px 0;border-bottom:1px solid var(--border);">';
+      html+='<div style="font-size:.65rem;color:var(--t3);">'+new Date(h.date).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})+'</div>';
+      html+='<div style="font-size:.78rem;color:var(--white);margin-top:3px;line-height:1.5;">'+escH(h.note)+'</div>';
+      html+='</div>';
+    });
+  }
+  html+='</div></div>';
+  return html;
+}
+
+// Account CRUD
+function openNewAccount(){
+  document.getElementById('m-account-title').textContent='New Account';
+  document.getElementById('ac-id').value='';
+  ['ac-name','ac-orgid','ac-contact','ac-email','ac-phone','ac-notes'].forEach(function(id){ var el=document.getElementById(id); if(el)el.value=''; });
+  document.getElementById('ac-status').value='active';
+  openM('m-account');
+}
+
+function editAccount(id){
+  var a=accounts.find(function(x){return x.id===id;}); if(!a)return;
+  document.getElementById('m-account-title').textContent='Edit Account';
+  document.getElementById('ac-id').value=a.id;
+  document.getElementById('ac-name').value=a.name||'';
+  document.getElementById('ac-orgid').value=a.orgId||'';
+  document.getElementById('ac-contact').value=a.contact||'';
+  document.getElementById('ac-email').value=a.email||'';
+  document.getElementById('ac-phone').value=a.phone||'';
+  document.getElementById('ac-notes').value=a.notes||'';
+  document.getElementById('ac-status').value=a.status||'active';
+  document.getElementById('ac-vertical').value=a.vertical||'Other';
+  if(a.startDate) document.getElementById('ac-start').value=a.startDate;
+  openM('m-account');
+}
+
+function saveAccount(){
+  var id=document.getElementById('ac-id').value;
+  var name=document.getElementById('ac-name').value.trim();
+  if(!name){toast('Account name required','err');return;}
+  if(id){
+    var a=accounts.find(function(x){return x.id===id;}); if(!a)return;
+    a.name=name; a.orgId=document.getElementById('ac-orgid').value.trim();
+    a.contact=document.getElementById('ac-contact').value.trim();
+    a.email=document.getElementById('ac-email').value.trim();
+    a.phone=document.getElementById('ac-phone').value.trim();
+    a.notes=document.getElementById('ac-notes').value.trim();
+    a.status=document.getElementById('ac-status').value;
+    a.vertical=document.getElementById('ac-vertical').value;
+    a.startDate=document.getElementById('ac-start').value;
+  } else {
+    accounts.push({id:uid(),name:name,orgId:document.getElementById('ac-orgid').value.trim(),contact:document.getElementById('ac-contact').value.trim(),email:document.getElementById('ac-email').value.trim(),phone:document.getElementById('ac-phone').value.trim(),vertical:document.getElementById('ac-vertical').value,status:document.getElementById('ac-status').value,startDate:document.getElementById('ac-start').value,notes:document.getElementById('ac-notes').value.trim(),ios:[],actuals:[],history:[]});
+  }
+  saveAccounts(); closeM('m-account'); renderAccountList();
+  if(id) renderAccountDetail(id);
+  toast(id?'Account updated':'Account created','ok');
+}
+
+function deleteAccount(id){
+  if(!confirm('Delete this account and all its data?'))return;
+  accounts=accounts.filter(function(x){return x.id!==id;});
+  activeAccountId=null;
+  document.getElementById('acct-detail').innerHTML='<div class="card" style="text-align:center;padding:40px;color:var(--t3);"><div style="font-size:2rem;margin-bottom:12px;">◉</div><div style="font-family:var(--mono);font-size:.75rem;">Select an account to view details</div></div>';
+  saveAccounts(); renderAccountList(); toast('Deleted','err');
+}
+
+// IO Management
+function openNewIO(acctId){
+  document.getElementById('m-io-title').textContent='Add Insertion Order';
+  document.getElementById('io-acct-id').value=acctId;
+  document.getElementById('io-id').value='';
+  ['io-name','io-total','io-date','io-start','io-end','io-docid'].forEach(function(id){var el=document.getElementById(id);if(el)el.value='';});
+  document.getElementById('io-type').value='open';
+  document.getElementById('io-status').value='active';
+  ioLines=[];
+  renderIOLines();
+  renderIOTypeHint();
+  openM('m-io');
+}
+
+function editIO(acctId,ioId){
+  var a=accounts.find(function(x){return x.id===acctId;}); if(!a)return;
+  var io=(a.ios||[]).find(function(x){return x.id===ioId;}); if(!io)return;
+  document.getElementById('m-io-title').textContent='Edit IO';
+  document.getElementById('io-acct-id').value=acctId;
+  document.getElementById('io-id').value=ioId;
+  document.getElementById('io-type').value=io.type||'open';
+  document.getElementById('io-name').value=io.name||'';
+  document.getElementById('io-total').value=io.total||'';
+  document.getElementById('io-date').value=io.ioDate||'';
+  document.getElementById('io-start').value=io.start||'';
+  document.getElementById('io-end').value=io.end||'';
+  document.getElementById('io-docid').value=io.docId||'';
+  document.getElementById('io-status').value=io.status||'active';
+  ioLines=JSON.parse(JSON.stringify(io.lines||[]));
+  renderIOLines(); renderIOTypeHint(); openM('m-io');
+}
+
+function renderIOTypeHint(){
+  var t=document.getElementById('io-type').value;
+  var el=document.getElementById('io-type-hint');
+  if(el) el.textContent=t==='open'?'Open IO: Credit limit only — actual monthly spend will vary. Great for long-term relationships with flexible budgets.':'Campaign IO: Exact tactic lines below must match what runs. Pacing tracked against these numbers.';
+}
+
+function addIOLine(){
+  ioLines.push({id:uid(),desc:'DISPLAY',targeting:'ALL TACTICS',imps:'',cpm:'',cost:'',tacticType:'prog'});
+  renderIOLines();
+}
+
+function renderIOLines(){
+  var el=document.getElementById('io-lines'); if(!el)return;
+  if(!ioLines.length){el.innerHTML='<div style="color:var(--t3);font-size:.72rem;padding:6px 0;">No tactic lines yet.</div>';return;}
+  var html='';
+  ioLines.forEach(function(ln){
+    html+='<div style="display:grid;grid-template-columns:1fr 1fr auto auto auto auto auto;gap:6px;align-items:center;margin-bottom:6px;">';
+    html+='<input class="fi" style="font-size:.72rem;" value="'+escH(ln.desc)+'" placeholder="DISPLAY/VIDEO/CTV..." onchange="ioLineField(\''+ln.id+'\',\'desc\',this.value)">';
+    html+='<input class="fi" style="font-size:.72rem;" value="'+escH(ln.targeting)+'" placeholder="Targeting" onchange="ioLineField(\''+ln.id+'\',\'targeting\',this.value)">';
+    html+='<select class="fs" style="font-size:.65rem;width:70px;" onchange="ioLineField(\''+ln.id+'\',\'tacticType\',this.value)"><option value="prog"'+(ln.tacticType==='prog'?' selected':'')+'>PROG</option><option value="omni"'+(ln.tacticType==='omni'?' selected':'')+'>OMNI</option></select>';
+    html+='<input class="fi" style="font-size:.72rem;width:90px;" value="'+(ln.imps||'')+'" placeholder="Imps" onchange="ioLineField(\''+ln.id+'\',\'imps\',this.value)">';
+    html+='<input class="fi" style="font-size:.72rem;width:65px;" value="'+(ln.cpm||'')+'" placeholder="CPM" onchange="ioLineField(\''+ln.id+'\',\'cpm\',this.value)">';
+    html+='<input class="fi" style="font-size:.72rem;width:90px;" value="'+(ln.cost||'')+'" placeholder="Cost" onchange="ioLineField(\''+ln.id+'\',\'cost\',this.value)">';
+    html+='<button class="btn btn-sm btn-danger" onclick="removeIOLine(\''+ln.id+'\')">✕</button>';
+    html+='</div>';
+  });
+  el.innerHTML=html;
+}
+
+function ioLineField(id,field,val){ var ln=ioLines.find(function(x){return x.id===id;}); if(ln)ln[field]=val; }
+function removeIOLine(id){ ioLines=ioLines.filter(function(x){return x.id!==id;}); renderIOLines(); }
+
+function saveIO(){
+  var acctId=document.getElementById('io-acct-id').value;
+  var ioId=document.getElementById('io-id').value;
+  var a=accounts.find(function(x){return x.id===acctId;}); if(!a)return;
+  var io={id:ioId||uid(),type:document.getElementById('io-type').value,name:document.getElementById('io-name').value.trim(),total:parseFloat(document.getElementById('io-total').value)||0,ioDate:document.getElementById('io-date').value,start:document.getElementById('io-start').value,end:document.getElementById('io-end').value,docId:document.getElementById('io-docid').value.trim(),status:document.getElementById('io-status').value,lines:JSON.parse(JSON.stringify(ioLines))};
+  if(!a.ios)a.ios=[];
+  if(ioId){ var idx=a.ios.findIndex(function(x){return x.id===ioId;}); if(idx>=0)a.ios[idx]=io; else a.ios.push(io); }
+  else { a.ios.push(io); a.history=a.history||[]; a.history.push({date:new Date().toISOString(),type:'io',note:'IO logged: '+io.name+' — '+fmtM(io.total)+' ('+(io.type==='open'?'Open IO':'Campaign IO')+')'}); }
+  saveAccounts(); closeM('m-io'); renderAccountDetail(acctId); toast('IO saved','ok');
+}
+
+function deleteIO(acctId,ioId){
+  if(!confirm('Delete this IO?'))return;
+  var a=accounts.find(function(x){return x.id===acctId;}); if(!a)return;
+  a.ios=(a.ios||[]).filter(function(x){return x.id!==ioId;});
+  saveAccounts(); renderAccountDetail(acctId); toast('IO deleted','err');
+}
+
+// Actuals
+function openActuals(acctId){
+  document.getElementById('act-acct-id').value=acctId;
+  var now=new Date();
+  document.getElementById('act-month').value=now.getMonth();
+  document.getElementById('act-year').value=now.getFullYear();
+  document.getElementById('act-prog-gross').value='';
+  document.getElementById('act-prog-net').value='';
+  document.getElementById('act-looker-paste').value='';
+  actOmniLines=[];
+  renderActOmniLines();
+  updateCommPreview();
+  openM('m-actuals');
+}
+
+function parseLookerPaste(){
+  var raw=document.getElementById('act-looker-paste').value;
+  var nums=raw.match(/\$[\d,]+\.?\d*/g);
+  if(nums&&nums.length>=2){
+    var gross=parseFloat(nums[0].replace(/[$,]/g,''));
+    var net=parseFloat(nums[1].replace(/[$,]/g,''));
+    document.getElementById('act-prog-gross').value=gross;
+    document.getElementById('act-prog-net').value=net;
+    updateCommPreview();
+  }
+}
+
+function addActualOmniLine(){
+  actOmniLines.push({id:uid(),tactic:'YouTube',gross:0});
+  renderActOmniLines();
+}
+
+function renderActOmniLines(){
+  var el=document.getElementById('act-omni-lines'); if(!el)return;
+  if(!actOmniLines.length){el.innerHTML='<div style="color:var(--t3);font-size:.72rem;padding:4px 0;">No Omni spend this month — add if client ran YouTube, Netflix, SEM, Meta, DOOH, etc.</div>';return;}
+  var omniTactics=['YouTube','YouTube TV','Netflix','Meta (Facebook/Instagram)','Google SEM','LinkedIn','DOOH','Other'];
+  var html='';
+  actOmniLines.forEach(function(ln){
+    html+='<div style="display:flex;gap:8px;align-items:center;margin-bottom:6px;">';
+    html+='<select class="fs" style="flex:1;" onchange="omniLineField(\''+ln.id+'\',\'tactic\',this.value)">';
+    omniTactics.forEach(function(t){html+='<option'+(ln.tactic===t?' selected':'')+'>'+t+'</option>';});
+    html+='</select>';
+    html+='<input class="fi" style="width:120px;" value="'+(ln.gross||'')+'" placeholder="Gross spend" type="number" onchange="omniLineField(\''+ln.id+'\',\'gross\',parseFloat(this.value)||0);updateCommPreview()">';
+    html+='<button class="btn btn-sm btn-danger" onclick="removeOmniLine(\''+ln.id+'\')">✕</button>';
+    html+='</div>';
+  });
+  el.innerHTML=html;
+}
+
+function omniLineField(id,field,val){ var ln=actOmniLines.find(function(x){return x.id===id;}); if(ln)ln[field]=val; }
+function removeOmniLine(id){ actOmniLines=actOmniLines.filter(function(x){return x.id!==id;}); renderActOmniLines(); updateCommPreview(); }
+
+function updateCommPreview(){
+  var progGross=parseFloat(document.getElementById('act-prog-gross').value)||0;
+  var progNet=parseFloat(document.getElementById('act-prog-net').value)||0;
+  var omniGross=actOmniLines.reduce(function(s,o){return s+(o.gross||0);},0);
+  var omniMgmt=omniGross*0.35;
+  var progComm=progNet*0.12;
+  var omniComm=omniMgmt*0.12;
+  var total=progComm+omniComm;
+  var el=document.getElementById('act-comm-preview'); if(!el)return;
+  el.innerHTML='<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">'
+    +'<div><div style="font-size:.6rem;color:var(--t3);">PROG COMMISSION</div><div style="color:var(--green);">$'+progComm.toFixed(2)+'</div><div style="font-size:.6rem;color:var(--t3);">'+fmtM(progNet)+' net × 12%</div></div>'
+    +'<div><div style="font-size:.6rem;color:var(--t3);">OMNI COMMISSION</div><div style="color:var(--blue);">$'+omniComm.toFixed(2)+'</div><div style="font-size:.6rem;color:var(--t3);">'+fmtM(omniGross)+' × 35% × 12%</div></div>'
+    +'<div><div style="font-size:.6rem;color:var(--t3);">TOTAL YOUR COMM</div><div style="color:var(--yellow);font-size:1.1rem;font-weight:600;">$'+total.toFixed(2)+'</div></div>'
+    +'</div>';
+}
+
+function saveActuals(){
+  var acctId=document.getElementById('act-acct-id').value;
+  var a=accounts.find(function(x){return x.id===acctId;}); if(!a)return;
+  var month=parseInt(document.getElementById('act-month').value);
+  var year=parseInt(document.getElementById('act-year').value);
+  var progGross=parseFloat(document.getElementById('act-prog-gross').value)||0;
+  var progNet=parseFloat(document.getElementById('act-prog-net').value)||0;
+  if(!a.actuals)a.actuals=[];
+  var existing=a.actuals.find(function(x){return x.month===month&&x.year===year;});
+  var entry={month:month,year:year,progGross:progGross,progNet:progNet,omni:JSON.parse(JSON.stringify(actOmniLines))};
+  if(existing){Object.assign(existing,entry);}else{a.actuals.push(entry);}
+  var comm=calcCommission(entry);
+  a.history=a.history||[];
+  a.history.push({date:new Date().toISOString(),type:'note',note:MONTHS[month]+' '+year+' actuals logged — Prog: '+fmtM(progGross)+' gross / '+fmtM(progNet)+' net. Commission: $'+comm.toFixed(2)});
+  saveAccounts(); closeM('m-actuals'); renderAccountDetail(acctId); toast('Actuals saved','ok');
+}
+
+function deleteActual(acctId,month,year){
+  var a=accounts.find(function(x){return x.id===acctId;}); if(!a)return;
+  a.actuals=(a.actuals||[]).filter(function(x){return !(x.month===month&&x.year===year);});
+  saveAccounts(); renderAccountDetail(acctId); toast('Removed','err');
+}
+
+// History / Notes
+function addHistoryNote(acctId){
+  var note=prompt('Add a note for this account:'); if(!note)return;
+  var a=accounts.find(function(x){return x.id===acctId;}); if(!a)return;
+  a.history=a.history||[];
+  a.history.push({date:new Date().toISOString(),type:'note',note:note.trim()});
+  saveAccounts(); renderAccountDetail(acctId); toast('Note added','ok');
+}
+
+// Paste Inbox
+function pasteInboxEmails(){ openM('m-paste-inbox'); document.getElementById('paste-inbox-text').value=''; document.getElementById('paste-inbox-result').style.display='none'; }
+function pasteEmailForAccount(acctId){ openM('m-paste-inbox'); document.getElementById('paste-inbox-text').value=''; document.getElementById('paste-inbox-result').style.display='none'; document.getElementById('m-paste-inbox').setAttribute('data-acct',acctId); }
+
+function runPasteInboxAI(){
+  var text=document.getElementById('paste-inbox-text').value.trim();
+  if(!text){toast('Paste some email text first','err');return;}
+  var resultEl=document.getElementById('paste-inbox-result');
+  resultEl.style.display='';
+  resultEl.innerHTML='<div style="color:var(--t2);font-size:.78rem;font-style:italic;">✦ Analyzing emails...</div>';
+
+  var acctId=document.getElementById('m-paste-inbox').getAttribute('data-acct')||'';
+  var knownAccounts=accounts.map(function(a){return a.name+(a.orgId?' (ID:'+a.orgId+')':'');}).join(', ');
+  var prompt='You are an AI assistant for a Simpli.fi Sales Director in East Tennessee. Analyze the following email(s) and return ONLY valid JSON.\n\nKNOWN ACCOUNTS: '+knownAccounts+'\n\nEMAILS:\n'+text+'\n\nReturn ONLY this JSON structure:\n{\n  "summary": "2-3 sentence plain English summary of what these emails are about",\n  "urgent": [{"subject":"email subject or topic","from":"sender","action":"what needs to happen","priority":"high/medium"}],\n  "todos": [{"text":"action item","priority":"high/medium/low","account":"matched account name or null"}],\n  "accountUpdates": [{"accountName":"matched account name","update":"what happened or was discussed","type":"email"}],\n  "suggestedReplies": [{"to":"recipient","subject":"subject","reply":"suggested short reply"}]\n}';
+
+  fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:2000,messages:[{role:'user',content:prompt}]})})
+  .then(function(r){return r.json();})
+  .then(function(data){
+    var raw=(data.content&&data.content[0]&&data.content[0].text)||'{}';
+    try {
+      var result=JSON.parse(raw.replace(/```json|```/g,'').trim());
+      applyPasteInboxResult(result,acctId);
+    } catch(e){ resultEl.innerHTML='<div style="color:var(--red);">Parse error. Raw: '+escH(raw.substring(0,300))+'</div>'; }
+  })
+  .catch(function(e){ resultEl.innerHTML='<div style="color:var(--red);">Error: '+escH(e.message)+'</div>'; });
+}
+
+function applyPasteInboxResult(result,acctId){
+  var resultEl=document.getElementById('paste-inbox-result');
+  var html='<div style="padding:12px;background:var(--s2);border-radius:6px;">';
+  html+='<div style="font-family:var(--mono);font-size:.6rem;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">✦ AI Analysis Complete</div>';
+  if(result.summary) html+='<div style="font-size:.78rem;color:var(--white);margin-bottom:12px;line-height:1.6;">'+escH(result.summary)+'</div>';
+
+  // Urgent
+  if(result.urgent&&result.urgent.length){
+    html+='<div style="font-family:var(--mono);font-size:.6rem;color:var(--red);margin-bottom:6px;">🔴 URGENT</div>';
+    result.urgent.forEach(function(u){ html+='<div style="background:rgba(255,59,48,.1);border:1px solid rgba(255,59,48,.3);border-radius:4px;padding:8px;margin-bottom:6px;font-size:.75rem;"><strong style="color:var(--white);">'+escH(u.subject||'')+'</strong><br><span style="color:var(--t2);">From: '+escH(u.from||'')+'</span><br><span style="color:var(--red);">→ '+escH(u.action||'')+'</span></div>'; });
+  }
+
+  // Todos
+  if(result.todos&&result.todos.length){
+    html+='<div style="font-family:var(--mono);font-size:.6rem;color:var(--yellow);margin:10px 0 6px;">ACTION ITEMS</div>';
+    result.todos.forEach(function(t){
+      html+='<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);">';
+      html+='<div><div style="font-size:.75rem;color:var(--white);">'+escH(t.text||'')+'</div>'+(t.account?'<div style="font-size:.65rem;color:var(--t2);">'+escH(t.account)+'</div>':'')+'</div>';
+      html+='<button class="btn btn-sm" onclick="addInboxTodo(\''+escH(t.text||'').replace(/'/g,"\\'")+'\')" style="font-size:.6rem;white-space:nowrap;">+ To-Do</button>';
+      html+='</div>';
+    });
+  }
+
+  // Account updates
+  if(result.accountUpdates&&result.accountUpdates.length){
+    html+='<div style="font-family:var(--mono);font-size:.6rem;color:var(--blue);margin:10px 0 6px;">ACCOUNT UPDATES</div>';
+    result.accountUpdates.forEach(function(u){
+      var matched=accounts.find(function(a){return a.name.toLowerCase().includes((u.accountName||'').toLowerCase())||(u.accountName||'').toLowerCase().includes(a.name.toLowerCase());});
+      html+='<div style="padding:6px 0;border-bottom:1px solid var(--border);">';
+      html+='<div style="font-size:.72rem;color:var(--green);">'+escH(u.accountName||'')+(matched?' ✓':' (no match)')+'</div>';
+      html+='<div style="font-size:.75rem;color:var(--white);margin-top:2px;">'+escH(u.update||'')+'</div>';
+      if(matched) html+='<button class="btn btn-sm" style="margin-top:4px;font-size:.6rem;" onclick="applyAccountHistoryUpdate(\''+matched.id+'\',\''+escH(u.update||'').replace(/'/g,"\\'")+'\')" >✓ Save to '+escH(matched.name)+'</button>';
+      html+='</div>';
+    });
+  }
+
+  // Suggested replies
+  if(result.suggestedReplies&&result.suggestedReplies.length){
+    html+='<div style="font-family:var(--mono);font-size:.6rem;color:var(--purple);margin:10px 0 6px;">SUGGESTED REPLIES</div>';
+    result.suggestedReplies.forEach(function(r){
+      html+='<div style="padding:8px;background:rgba(130,80,255,.08);border:1px solid rgba(130,80,255,.2);border-radius:4px;margin-bottom:6px;font-size:.73rem;">';
+      html+='<div style="color:var(--t2);">To: '+escH(r.to||'')+'  |  Subject: '+escH(r.subject||'')+'</div>';
+      html+='<div style="color:var(--white);margin-top:4px;">'+escH(r.reply||'')+'</div>';
+      html+='<button class="btn btn-sm" style="margin-top:6px;font-size:.6rem;" onclick="copyToClipboard(\''+escH(r.reply||'').replace(/'/g,"\\'")+'\')" >⧉ Copy Reply</button>';
+      html+='</div>';
+    });
+  }
+
+  html+='</div>';
+  resultEl.innerHTML=html;
+
+  // Auto-apply account updates
+  if(result.accountUpdates){
+    result.accountUpdates.forEach(function(u){
+      if(acctId){
+        var a=accounts.find(function(x){return x.id===acctId;});
+        if(a){ a.history=a.history||[]; a.history.push({date:new Date().toISOString(),type:'email',note:u.update||''}); }
+      }
+    });
+    saveAccounts();
+  }
+}
+
+function applyAccountHistoryUpdate(acctId,update){
+  var a=accounts.find(function(x){return x.id===acctId;}); if(!a)return;
+  a.history=a.history||[];
+  a.history.push({date:new Date().toISOString(),type:'email',note:update});
+  saveAccounts();
+  if(activeAccountId===acctId) renderAccountDetail(acctId);
+  toast('Saved to '+a.name,'ok');
+}
+
+function copyToClipboard(text){ navigator.clipboard.writeText(text).then(function(){toast('Copied','ok');}); }
 
 // ─── GMAIL SMART INBOX ────────────────────────────────────────────────────────
 var GMAIL_SCOPES='https://www.googleapis.com/auth/gmail.readonly';
